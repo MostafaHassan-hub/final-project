@@ -1,0 +1,222 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #ffffff;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #0a95c0;
+    padding: 5px 50px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    border-radius: 0 0 2px 2px;
+}
+
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        padding: 10px 20px;
+    }
+
+    .navbar .logo {
+        margin-bottom: 10px;
+    }
+
+    .navbar ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .navbar ul li {
+        margin: 10px 0;
+    }
+
+    .navbar .buttons {
+        margin-top: 10px;
+    }
+}
+
+.navbar .logo {
+    display: flex;
+    align-items: center;
+}
+
+.navbar .logo img {
+    height: 60px;
+    margin-left: 50px;
+}
+
+.navbar ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar ul li {
+    margin: 0 15px;
+}
+
+.navbar ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 1.1em;
+    transition: color 0.3s ease;
+}
+
+.navbar ul li a:hover {
+    color: #08dee9;
+}
+
+.navbar .buttons a {
+    text-decoration: none;
+    color: #0a95c0;
+    background-color: white;
+    padding: 10px 25px;
+    border-radius: 7px;
+    margin-left: 10px;
+    font-size: 1em;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.navbar .buttons a:hover {
+    border: 2px solid white;
+    background-color: #0a95c0;
+    color: #ffffff;
+}
+
+/* !=========================== navbar ========================== */
+
+
+
+.container {
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+    margin-left: 25px;
+    gap: 20px;
+    width: 55%;
+    padding: 20px;
+    border-radius: 12px;
+    border: 3px solid #0097a7;
+
+}
+
+.appointments-box {
+    flex: 1;
+    padding: 20px;
+}
+
+.back-arrow {
+    text-decoration: none;
+    font-size: 22px;
+    color: #333;
+}
+
+.title {
+    text-align: center;
+    color: #0056b3;
+    font-weight: bold;
+}
+
+.tabs {
+    display: flex;
+    justify-content: space-around;
+    margin: 10px 0;
+}
+
+.tabs span {
+    padding: 6px 12px;
+    cursor: pointer;
+    font-weight: bold;
+    color: #666;
+    transition: color 0.3s;
+}
+
+.tabs .active {
+    border-bottom: 3px solid #0056b3;
+    color: #0056b3;
+}
+
+.appointment-card {
+    display: flex;
+    background: #d6eaff;
+    padding: 15px;
+    border-radius: 12px;
+    margin-top: 15px;
+    align-items: center;
+}
+
+.doctor-img-my {
+    width: 245px;
+    height: 290px;
+}
+
+.appointment-info {
+    margin-right: 15px;
+    margin-left: 20px;
+
+}
+
+.appointment-info h3 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 18px;
+}
+
+.appointment-time {
+    color: #555;
+}
+
+.buttons {
+    margin-top: 10px;
+}
+
+.buttons button {
+    padding: 7px 12px;
+    border-radius: 50px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: background 0.3s;
+}
+
+.cancel {
+    background: #646d7100;
+    color: #3E97B8;
+    border: 2px;
+
+}
+
+.reschedule {
+    background: #3E97B8;
+    color: white;
+    margin-right: 6px;
+    border: 5px;
+}
+
+.reschedule:hover {
+    background: #025aa5;
+}
+
+.doktor {
+    position: absolute;
+    top: 120px;
+    right: 100px;
+}
+
+.doctor-side-img {
+    width: 375px;
+}
+
+.back-arrow img {
+    width: 25px;
+    cursor: pointer;
+    top: 0px;
+}

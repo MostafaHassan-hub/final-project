@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Calendar</title>
+    <link rel="stylesheet" href="./Select date and time.css">
+    <link rel="stylesheet" href="./style.css">
+
+</head>
+
+<body>
+
+    <nav class="navbar">
+        <div class="logo">
+            <img src="./images/100.png" alt="Clinic Logo" />
+        </div>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="profile.html">Profile</a></li>
+            <li><a href="find_doctor.html">Find a Doctor</a></li>
+            <li><a href="contact_us.html">Contact Us</a></li>
+        </ul>
+        <div class="buttons">
+            <a href="sign_up.html">Sign Up</a>
+            <a href="sign_in.html">Sign In</a>
+        </div>
+    </nav>
+
+    <div class="appointment-container">
+
+        <div class="calendar-box">
+
+            <div class="arrow-back">
+                <a href="./booking.html" class="back-arrow">
+                    <img src="./images/Image/Vector-3.png" alt="Back" />
+                </a>
+            </div>
+
+            <div class="calendar-header">
+                <button id="prev-month">←</button>
+                <span id="current-month-year"></span>
+                <button id="next-month">→</button>
+            </div>
+
+            <div class="calendar-days">
+                <span>Sun</span><span>Mon</span><span>Tue</span><span>Wed</span><span>Thu</span><span>Fri</span><span>Sat</span>
+            </div>
+            <div id="calendar-dates" class="calendar-dates"></div>
+
+            <h3>Available Time Slot</h3>
+            <div id="time-slots" class="time-slots">
+                <button class="time">10:00 AM</button>
+                <button class="time">11:00 AM</button>
+                <button class="time">12:00 PM</button>
+                <button class="time">1:00 PM</button>
+                <button class="time">2:00 PM</button>
+            </div>
+
+            <button class="appointment-btn">Make an appointment</button>
+        </div>
+
+        <div class="doctor-img">
+            <img src="./images/99.png" alt="Doctor">
+        </div>
+    </div>
+
+    <script src="./Select date and time.js"></script>
+</body>
+
+</html>

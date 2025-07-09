@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CLINIC</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <div class="navbar">
+      <div class="logo">
+        <span style="color: white; font-size: 1.5em; font-weight: bold"
+          ><img src="./images/100.png" alt="Clinic Logo"
+        /></span>
+      </div>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="profile.html">Profile</a></li>
+        <li><a href="find_doctor.html">Find a Doctor</a></li>
+        <li><a href="contact us.html">Contact us</a></li>
+      </ul>
+      <div class="buttons">
+        <a href="sign up.html">Sign Up</a>
+        <a href="sign in.html">Sign In</a>
+      </div>
+    </div>
+    <div class="login-container">
+      <!-- Left Side - Image -->
+      <div class="login-image"></div>
+
+      <!-- Right Side - Form -->
+      <div class="login-form">
+        <h2>welcome back to <span class="clinic-text">CLINIK</span></h2>
+        <form action="dashboard.html" method="POST">
+          <input type="text" placeholder="Name" required />
+          <input type="email" placeholder="Email" required />
+          <input type="password" placeholder="Password" required />
+
+          <!-- Forgot Password Link -->
+          <p class="forgot-password">
+            <a href="reset-password.html">Forgot Password?</a>
+          </p>
+
+          <button type="submit">Login In</button>
+          <p class="register-link">
+            Already have an account? <a href="sign up.html">Sign up</a>
+          </p>
+        </form>
+      </div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>CLINIC</title>
+  <link rel="stylesheet" href="./find_doctor.css" />
+</head>
+
+<body>
+
+
+  <div class="navbar">
+    <div class="logo">
+      <span style="color: white; font-size: 1.5em; font-weight: bold"><img src="./images/100.png"
+          alt="Clinic Logo" /></span>
+    </div>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="profile.html">Profile</a></li>
+      <li><a href="find_doctor.html">Find a Doctor</a></li>
+      <li><a href="contact us.html">Contact us</a></li>
+    </ul>
+    <div class="buttons">
+      <a href="sign up.html">Sign Up</a>
+      <a href="sign in.html">Sign In</a>
+      <!-- <a href="./booking.html">dsf</a> -->
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="content">
+      <h2>Find a Doctor</h2>
+      <input type="text" class="search-bar" placeholder="Search for a doctor..." />
+
+      <div class="categories">
+        <h3>Categories</h3>
+        <a href="categories.html" class="see-all">See All</a>
+        <div class="buttons">
+          <button>Denteeth</button>
+          <button>Therapist</button>
+          <button>Surgeon</button>
+          <button>Cardiologist</button>
+          <button>Neurologist</button>
+        </div>
+      </div>
+
+      <div class="all-doctors">
+        <h3>All Doctors</h3>
+
+        <a href="all_doctors.html" class="see-all">See All</a>
+
+        <div class="doctor-card">
+          <img src="images/1.png" alt="Doctor" />
+          <div class="doctor-info">
+            <div class="favorite-heart">❤️</div>
+            <h4>Dr. Badr Wael</h4>
+            <p>Expert in Dental Surgery</p>
+            <div class="rating">⭐⭐⭐⭐⭐ 5</div>
+
+            <a href="./booking.html">
+              <button class="book-btn">Book</button>
+            </a>
+
+          </div>
+        </div>
+
+        <div class="doctor-card">
+          <img src="images/11.png" alt="Doctor" />
+          <div class="doctor-info">
+            <div class="favorite-heart">❤️</div>
+            <h4>Dr. Sarah Ahmed</h4>
+            <p>Specialist in Therapy</p>
+            <div class="rating">⭐⭐⭐⭐⭐ 5</div>
+            <a href="./Sarah.html">
+              <button class="book-btn">Book</button>
+            </a>
+
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+
+    <div class="profile-section">
+      <img src="./images/88.png" alt="">
+    </div>
+  </div>
+  <script src="./doctor.js"></script>
+</body>
+
+</html>

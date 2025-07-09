@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>CLINIC</title>
+  <link rel="stylesheet" href="./profile.css" />
+</head>
+
+<body>
+
+  <div class="navbar">
+    <div class="logo">
+      <span style="color: white; font-size: 1.5em; font-weight: bold"><img src="./images/100.png"
+          alt="Clinic Logo" /></span>
+    </div>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="profile.html">Profile</a></li>
+      <li><a href="find_doctor.html">Find a Doctor</a></li>
+      <li><a href="contact us.html">Contact us</a></li>
+    </ul>
+    <div class="buttons">
+      <a href="sign up.html">Sign Up</a>
+      <a href="sign in.html">Sign In</a>
+    </div>
+  </div>
+
+  <div class="container">
+
+    <div class="profile-box">
+
+      <h1 style="color: #3498db">Profile</h1>
+
+      <div class="profile-options">
+
+        <a href="your_profile.html" class="option">
+          <img src="./images/Image/Group.png" alt="Your Profile" class="image" />
+          <span>Your Profile</span>
+          <img src="./images/Image/Vector-3.png" alt="Arrow" class="arrow" />
+        </a>
+
+        <a href="./setting.html" class="option">
+          <img src="./images/Image/Vector-1.png" alt="Settings" class="image" />
+          <span>Settings</span>
+          <img src="./images/Image/Vector-3.png" alt="Arrow" class="arrow" />
+        </a>
+
+        <a href="./My Appointments.html" class="option">
+          <img src="./images/Image/book.png" alt="Booking" class="image" />
+          <span>My Appointments</span>
+          <img src="./images/Image/Vector-3.png" alt="Arrow" class="arrow" />
+        </a>
+
+        <a href="logout.html" id="logout-btn" class="option">
+          <img src="./images/Image/Vector-5.png" alt="Log Out" class="image" />
+          <span>Log Out</span>
+          <img src="./images/Image/Vector-3.png" alt="Arrow" class="arrow" />
+        </a>
+
+      </div>
+
+      <div id="logout-modal" class="modal">
+        <div class="modal-content">
+          <h2>Log out</h2>
+          <p>Are you sure you want to log out?</p>
+          <div class="modal-buttons">
+            <button id="cancel-btn">Cancel</button>
+            <button id="confirm-logout">Yes, I'm sure</button>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="profile-section">
+      <img src="./images/1.png" alt="Profile" class="profile-image" />
+      <h3 class="profile-name">Denteeth</h3>
+    </div>
+
+  </div>
+
+  <script src="./profile.js"></script>
+</body>
+
+</html>

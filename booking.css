@@ -1,0 +1,233 @@
+/* إعادة تعيين القيم الافتراضية وتحسين الهيكلة */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #ffffff;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #0a95c0;
+    padding: 15px 50px;
+    width: 100%;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.navbar ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.navbar ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 1.1em;
+    transition: color 0.3s ease;
+}
+
+.navbar ul li a:hover {
+    color: #08dee9;
+}
+
+.box {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    width: 95%;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+
+/* !===================doctor-card==================== */
+
+.doctor-card {
+    display: flex;
+    align-items: center;
+    padding: 15px 20px;
+    gap: 15px;
+    position: relative;
+}
+
+.doctor-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex-grow: 1;
+    position: relative;
+}
+
+
+.doctor-info {
+    display: flex;
+    flex-direction: column;
+    margin-left: 15px;
+}
+
+.doctor-info .Badr {
+    font-size: 32px;
+    font-weight: bold;
+    color: #000;
+    margin-bottom: 2px;
+}
+
+.specialty {
+    color: #0097a7;
+    font-size: 20px;
+    margin-bottom: 8px;
+}
+
+
+.payment {
+    font-size: 24px;
+    font-weight: bold;
+    color: #000;
+    display: flex;
+    align-items: center;
+    gap: 100px;
+}
+
+.price {
+    color: #0097a7;
+    font-weight: bold;
+}
+
+.rating {
+    color: #F89603;
+    font-size: 30px;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+/* !===================doctor-card==================== */
+
+
+.container-booking {
+    width: 55%;
+    background: #fff;
+    border-radius: 15px;
+    border: 2px solid #0a95c0;
+    padding: 40px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.appointment-card {
+    width: 100%;
+}
+
+.doctor-flex {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+
+
+.back-btn {
+    background: none;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+    position: absolute;
+    top: 15px;
+    left: 15px;
+}
+
+h2 {
+    color: #0a95c0;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.payment,
+.details,
+.working-hours,
+.date {
+    margin-bottom: 20px;
+}
+
+.details {
+    margin-left: 50px;
+}
+
+.Details4 {
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 24px;
+    margin-bottom: 10px;
+    margin-top: 15px;
+}
+
+.Worem {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 21.12px;
+}
+
+.Working {
+    margin-bottom: 20px;
+}
+
+.time-slots,
+.date-slots {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.time-slots button,
+.date-slots button {
+    padding: 10px 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background-color: #fff;
+    cursor: pointer;
+    font-size: 14px;
+    transition: background 0.3s ease;
+    margin-bottom: 10px;
+
+}
+
+.date-slots button.selected {
+    background-color: #00bcd4;
+    color: #fff;
+
+}
+
+.Date4 {
+    margin-bottom: 20px;
+}
+
+.book-btn {
+    width: 50%;
+    padding: 15px;
+    background-color: #00bcd4;
+    color: #fff;
+    border: none;
+    margin-left: 25%;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.book-btn:hover {
+    background-color: #0097a7;
+}

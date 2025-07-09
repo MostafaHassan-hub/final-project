@@ -1,0 +1,150 @@
+.appointment-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 30px;
+    padding: 20px;
+    margin-top: 20px;
+    margin-left: 10px;
+}
+
+.calendar-box {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    border: 2px solid #0097a7;
+    width: 473px;
+    text-align: center;
+    margin-top: 10px;
+}
+
+.calendar-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.calendar-header button {
+    background: none;
+    border: none;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.calendar-days {
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    font-weight: bold;
+}
+
+.calendar-dates {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    gap: 5px;
+}
+
+.calendar-dates span {
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.calendar-dates .selected {
+    background-color: #0097a7;
+    color: white;
+}
+
+.calendar-dates .disabled {
+    color: #ccc;
+}
+
+h3 {
+    font-size: 16px;
+    font-weight: bold;
+    margin-top: 24px;
+    margin-bottom: 24px !important;
+}
+
+.time-slots {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.time-slots {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.time {
+    background: white;
+    color: #0097a7;
+    border: 2px solid #0097a7;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s, color 0.3s, border-color 0.3s;
+}
+
+.time:hover {
+    background: #0097a7;
+    color: white;
+}
+
+.time.selected {
+    background: #005f6b;
+    color: white;
+    border-color: #005f6b;
+}
+
+@media (max-width: 480px) {
+    .time {
+        flex: 1 1 100px;
+        text-align: center;
+    }
+}
+
+
+.appointment-btn {
+    display: block;
+    width: 100%;
+    background: #0097a7;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    margin-top: 15px;
+}
+
+.doctor-img img {
+    margin-right: 130px;
+    width: 250px;
+    height: 590px;
+    object-fit: cover;
+}
+
+@media (max-width: 768px) {
+    .appointment-container {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+.back-arrow {
+    float: left;
+}
+
+.arrow-back {
+    display: block;
+    direction: rtl;
+    margin-bottom: 50px;
+    text-align: right;
+}
